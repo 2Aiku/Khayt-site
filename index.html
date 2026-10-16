@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KHAYT — Cairo Street Wear</title>
+  <meta name="description" content="KHAYT is an independent Cairo streetwear brand. Shop locally designed clothing built for the city. Order via WhatsApp.">
+
+<meta name="keywords" content="Cairo clothing brand, Egyptian streetwear, independent fashion Cairo, shop Cairo clothes">
+
+<meta property="og:title" content="KHAYT — Cairo Street Wear">
+<meta property="og:description" content="Locally designed streetwear rooted in Cairo culture.">
+  <style>
+    /* ── RESET & BASE ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #0a0a0a;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* ── NAVIGATION ── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #0a0a0a;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+}
+
+nav ul a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+nav ul a:hover {
+  color: #fff;
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  max-width: 700px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #aaa;
+  margin-bottom: 36px;
+}
+
+/* ── BUTTON ── */
+.btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+/* ── SECTIONS ── */
+section {
+  padding: 80px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+section p {
+  color: #aaa;
+  font-size: 16px;
+  max-width: 600px;
+}
+
+/* ── CARDS ── */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 32px;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: #444;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.card p {
+  font-size: 14px;
+  color: #888;
+}
+
+/* ── CONTACT SECTION ── */
+#contact {
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 60px 24px;
+  }
+
+  nav ul {
+    gap: 16px;
+  }
+
+}
+/* ── FORM ── */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+form input,
+form textarea {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 6px;
+  padding: 14px 18px;
+  color: #fff;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #555;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #555;
+}
+
+.whatsapp-btn {
+  display: block;
+  background: #25D366;
+  color: #fff;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">KHAYT</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Collection</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Wear What Cairo Feels Like</h1>
+    <p>Independent streetwear rooted in the city.</p>
+    <a href="#contact" class="btn">Shop Now</a>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>Who We Are</h2>
+    <p>KHAYT is an independent Cairo-based clothing brand built for people who move with purpose. Every piece is designed locally, made carefully, and worn proudly.</p>
+  </section>
+
+  <!-- COLLECTION SECTION -->
+  <section id="services">
+    <h2>The Collection</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Street Series</h3>
+        <p>Oversized fits built for Cairo summers.</p>
+      </div>
+      <div class="card">
+        <h3>Core Essentials</h3>
+        <p>Clean basics you wear every day.</p>
+      </div>
+      <div class="card">
+        <h3>Limited Drops</h3>
+        <p>Exclusive pieces released monthly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>Send us a message or order directly on WhatsApp.</p>
+
+    <form action="https://formspree.io/f/mrpeoqbb" method="POST">
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your message or order details..." rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <a href="https://wa.me/201234567890?text=Hi%20I%20want%20to%20place%20an%20order" 
+       target="_blank" class="btn whatsapp-btn">
+      Order on WhatsApp
+    </a>
+
+  </section>
+
+</body>
+</html>
